@@ -80,7 +80,6 @@ class _VideoPlayerViewState extends State<VideoPlayerView> {
      durationTotal = formatDuration(_controller.value.duration);
      duration = formatDuration(_controller.value.position);
      if(duration == durationTotal) {
-        _controller.pause();
         _isFullWatch = true;
      }
     super.initState();
@@ -264,7 +263,6 @@ class _VideoPlayerViewState extends State<VideoPlayerView> {
 
   void checkVideo(){
     if(duration == durationTotal) {
-      _controller.pause();
       _isFullWatch == true;
     }
   }
