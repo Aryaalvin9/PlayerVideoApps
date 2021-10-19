@@ -64,7 +64,7 @@ class _VideoPlayerViewState extends State<VideoPlayerView> {
 
   @override
   void initState() {
-     _controller = VideoPlayerController.network("https://api.dacast.com/v2/vod/1140446/download?apikey=137797_ae2ee525d4a1ab988984&_format=JSON");
+     _controller = VideoPlayerController.network("");
      _initialize = _controller.initialize();
       _controller.addListener(() {
         setState(() {
